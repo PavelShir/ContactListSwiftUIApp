@@ -11,6 +11,11 @@
 		A66F435B2911B2E10058EB11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F435A2911B2E10058EB11 /* ContentView.swift */; };
 		A66F435D2911B2E60058EB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66F435C2911B2E60058EB11 /* Assets.xcassets */; };
 		A66F43602911B2E60058EB11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66F435F2911B2E60058EB11 /* Preview Assets.xcassets */; };
+		A66F43672911B63E0058EB11 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F43662911B63E0058EB11 /* ContactList.swift */; };
+		A66F43692911B6A90058EB11 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F43682911B6A90058EB11 /* ContactDetails.swift */; };
+		A66F436B2911B7600058EB11 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F436A2911B7600058EB11 /* Numbers.swift */; };
+		A66F436D2911BB5A0058EB11 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F436C2911BB5A0058EB11 /* DataManager.swift */; };
+		A66F436F2911BBA60058EB11 /* PersonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F436E2911BBA60058EB11 /* PersonsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		A66F435A2911B2E10058EB11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A66F435C2911B2E60058EB11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66F435F2911B2E60058EB11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A66F43662911B63E0058EB11 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		A66F43682911B6A90058EB11 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		A66F436A2911B7600058EB11 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		A66F436C2911BB5A0058EB11 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A66F436E2911BBA60058EB11 /* PersonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,10 @@
 			children = (
 				A66F43582911B2E10058EB11 /* ContactListSwiftUIAppApp.swift */,
 				A66F435A2911B2E10058EB11 /* ContentView.swift */,
+				A66F43662911B63E0058EB11 /* ContactList.swift */,
+				A66F43682911B6A90058EB11 /* ContactDetails.swift */,
+				A66F436A2911B7600058EB11 /* Numbers.swift */,
+				A66F43702911BBD20058EB11 /* Models */,
 				A66F435C2911B2E60058EB11 /* Assets.xcassets */,
 				A66F435E2911B2E60058EB11 /* Preview Content */,
 			);
@@ -65,6 +79,15 @@
 				A66F435F2911B2E60058EB11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A66F43702911BBD20058EB11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A66F436C2911BB5A0058EB11 /* DataManager.swift */,
+				A66F436E2911BBA60058EB11 /* PersonsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66F435B2911B2E10058EB11 /* ContentView.swift in Sources */,
+				A66F436F2911BBA60058EB11 /* PersonsModel.swift in Sources */,
+				A66F436D2911BB5A0058EB11 /* DataManager.swift in Sources */,
+				A66F43692911B6A90058EB11 /* ContactDetails.swift in Sources */,
+				A66F436B2911B7600058EB11 /* Numbers.swift in Sources */,
 				A66F43592911B2E10058EB11 /* ContactListSwiftUIAppApp.swift in Sources */,
+				A66F43672911B63E0058EB11 /* ContactList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
