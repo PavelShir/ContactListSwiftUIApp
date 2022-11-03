@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContactList: View {
     
-    let contacts = Person.getPersonList()
+    let person: [Person]
 
     var body: some View {
         NavigationView {
             VStack {
-                List(contacts) { contact in
+                List(person) { contact in
                     NavigationLink(destination: ContactDetails(person: contact)) {
                         Text("\(contact.name) \(contact.surname)")
                     }
@@ -27,6 +27,6 @@ struct ContactList: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactList()
+        ContactList(person: Person.getPersonList())
     }
 }

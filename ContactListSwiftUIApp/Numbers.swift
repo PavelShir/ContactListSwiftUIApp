@@ -9,21 +9,13 @@ import SwiftUI
 
 struct Numbers: View {
    
-    let person: Person
+    let person: [Person]
 
     var body: some View {
-                List {
+                List (person) { person in 
                     Section("\(person.fullName)", content: {
-                        HStack {
-                            Image(systemName: "phone.fill")
-                                .foregroundColor(.blue)
-                            Text("\(person.phoneNumber)")
-                        }
-                        HStack {
-                            Image(systemName: "envelope")
-                                .foregroundColor(.blue)
-                            Text("\(person.email)")
-                        }
+                        Label("\(person.phoneNumber)", systemImage: "phone.fill")
+                        Label("\(person.email)", systemImage: "envelope")
                     })
                 }
                 .listStyle(.insetGrouped)
@@ -35,6 +27,6 @@ struct Numbers: View {
 
 struct Numbers_Previews: PreviewProvider {
     static var previews: some View {
-        Numbers(person: Person(name: "test", surname: "test", phoneNumber: "test", email: "test"))
+        Numbers(person: Person.getPersonList())
     }
 }

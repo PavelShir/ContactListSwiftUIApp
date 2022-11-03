@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let person: Person
+    let contacts = Person.getPersonList()
     
     var body: some View {
         TabView {
-            ContactList()
+            ContactList(person: contacts)
                 .tabItem {
                     Label("Contacts", systemImage: "person.fill")
                 }
-            Numbers(person: Person(name: person.name, surname: person.surname, phoneNumber: person.phoneNumber, email: person.email))
+            Numbers(person: contacts)
                 .tabItem {
                     Label("Numbers", systemImage: "phone.fill")
                 }
@@ -28,6 +28,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(person: Person(name: "", surname: "", phoneNumber: "", email: ""))
+        ContentView()
     }
 }
