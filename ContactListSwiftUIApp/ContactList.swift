@@ -15,7 +15,7 @@ struct ContactList: View {
         NavigationView {
             VStack {
                 List(contacts) { contact in
-                    NavigationLink(destination: ContactDetails()) {
+                    NavigationLink(destination: ContactDetails(person: contact)) {
                         Text("\(contact.name) \(contact.surname)")
                     }
                 }

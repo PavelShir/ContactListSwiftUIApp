@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct Numbers: View {
+   
+    let person: Person
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+                List {
+                    Section("\(person.fullName)", content: {
+                        HStack {
+                            Image(systemName: "phone.fill")
+                                .foregroundColor(.blue)
+                            Text("\(person.phoneNumber)")
+                        }
+                        HStack {
+                            Image(systemName: "envelope")
+                                .foregroundColor(.blue)
+                            Text("\(person.email)")
+                        }
+                    })
+                }
+                .listStyle(.insetGrouped)
+                .navigationTitle("Contacts")
+            }
+            
+        }
+ 
 
 struct Numbers_Previews: PreviewProvider {
     static var previews: some View {
-        Numbers()
+        Numbers(person: Person(name: "test", surname: "test", phoneNumber: "test", email: "test"))
     }
 }
