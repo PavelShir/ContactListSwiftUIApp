@@ -17,23 +17,13 @@ struct ContactDetails: View {
                 .resizable()
                 .frame(width: 200, height: 200)
                 .position(x: 150, y: 100)
-            HStack {
-                Image(systemName: "phone.fill")
-                    .foregroundColor(.blue)
-                Text("\(person.phoneNumber)")
+            Label("\(person.phoneNumber)", systemImage: "phone.fill")
+            Label("\(person.email)", systemImage: "envelope")
             }
-            HStack {
-                Image(systemName: "envelope")
-                    .foregroundColor(.blue)
-                Text("\(person.email)")
-            }
-            
-            
-        }
         .navigationTitle("\(person.fullName)")
-        
+        }
     }
-}
+
 
 struct ContactDetails_Previews: PreviewProvider {
     static var previews: some View {
